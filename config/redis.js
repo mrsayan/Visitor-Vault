@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config({ path: "./config/config.env" });
 
-const redisClient = redis.createClient(process.env.REDIS_URL)
+const redisClient = redis.createClient({ url: process.env.REDIS_URL });
 
 const connectDB = async () => {
   try {
