@@ -2,9 +2,9 @@
 import express from "express";
 import { connectDB } from "./config/redis.js";
 import viewsRouter from "./app.js";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ path: "./config/config.env" });
 
 // Create an instance of our app
 const app = express();

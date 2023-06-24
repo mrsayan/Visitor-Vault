@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "npx kill-port 3030 && nodemon server.js"
+    "dev": "npx kill-port 5253 && nodemon server.js"
   },
   "type": "module",
   "repository": {

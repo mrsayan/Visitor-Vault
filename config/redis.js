@@ -1,5 +1,8 @@
 import redis from "redis";
 
+
+console.log(`Redis URL: ${process.env.REDIS_URL}`);
+
 const redisClient = redis.createClient(process.env.REDIS_URL)
 
 const connectDB = async () => {
@@ -12,6 +15,5 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
-
 
 export { redisClient, connectDB };
