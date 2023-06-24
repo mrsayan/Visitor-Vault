@@ -1,7 +1,7 @@
 import redis from "redis";
+import dotenv from "dotenv";
 
-
-console.log(`Redis URL: ${process.env.REDIS_URL}`);
+dotenv.config({ path: "./config/config.env" });
 
 const redisClient = redis.createClient(process.env.REDIS_URL)
 
